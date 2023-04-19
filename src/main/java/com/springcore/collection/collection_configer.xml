@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/context 
+     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+<bean name="student1" class="com.springcore.collection.Student">
+<property name="name" value="aziz"/>
+<property name="phones">
+<list>
+<value>7654765</value>
+<value>8676777</value>
+<value>45346345</value>
+<value>076763</value>
+</list>
+</property>
+<property name="Address">
+<set>
+<value>mumbai</value>
+<value>thane</value>
+<value>pune</value>
+<value>nashik</value>
+<value>null</value>
+</set>
+</property>
+<property name="course">
+<map>
+<entry key="java" value="2month"/>
+<entry key="sql" value="1month"/>
+<entry key="Html" value="1month"/>
+<entry key="spring" value="1month"/>
+<entry key="servlet" value="1.5month"/>
+</map>
+</property>
+<property name="pro">
+<props>
+<prop key="name">aziz</prop>
+<prop key="course">java</prop>
+</props>
+
+
+</property>
+
+
+</bean>
+
+	
+</beans> 
